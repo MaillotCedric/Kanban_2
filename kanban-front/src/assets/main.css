@@ -1,0 +1,125 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.modal-content {
+  background-color: #042648;
+  border: 1px solid white;
+}
+
+.modal-header {
+  color: white;
+  font-weight: bold;
+}
+
+.close {
+  color: white !important;
+  text-shadow: none;
+}
+
+.close:hover {
+  color: rgba(0, 189, 126) !important;
+}
+
+.my-btn {
+  background-color: rgba(0, 189, 126) !important;
+  border-color: rgba(0, 189, 126) !important;
+  color: white !important;
+}
+
+.btn-action {
+  margin: 15px 10px 10px 15px;
+}
+
+.my-btn:focus {
+  box-shadow: 0 0 0 .1rem white !important;
+  /* border-color: white !important; */
+}
+
+input, .custom-select {
+  background-color: rgba(0, 189, 126) !important;
+  color: white !important;
+}
+
+input:focus, .custom-select:focus {
+  box-shadow: 0 0 0 .06rem white !important;
+  border-color: white !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1 !important; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white !important;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: rgba(0, 189, 126);
+  border-color: white;
+  -webkit-text-fill-color: white;
+  /* -webkit-box-shadow: 0 0 0 .06rem white; */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.i-arrows-tache {
+  margin-right: 6px;
+}
+
+.i-arrows-tache:hover {
+  cursor: pointer;
+}
+
+.i-pencil-tache:hover {
+  cursor: pointer;
+}
+
+.item_handle:hover {
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
